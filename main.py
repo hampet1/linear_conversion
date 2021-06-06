@@ -20,10 +20,10 @@ points_z = []
 
 points = Point()
 for i in range(100):
-    planet = Point()
-    points_x.append(planet.x)
-    points_y.append(planet.y)
-    points_z.append(planet.z)
+    point = Point()
+    points_x.append(point.x)
+    points_y.append(point.y)
+    points_z.append(point.z)
 
 df = pd.DataFrame({'x_coordinates': points_x, 'y_coordinates': points_y, 'z_coordinates': points_z})
 
@@ -61,4 +61,5 @@ ax_2.scatter(x_new_range, y_new_range, z_new_range)
 
 fig.suptitle("rescaling the range (0-100) to the range (0-5000) - general formula: "
              "NewVal = (((OldValue - OldMin)*NewRange) / OldRange + NewMin)", fontsize=12)
+
 plt.show()
