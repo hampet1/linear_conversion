@@ -5,3 +5,8 @@
 \begin{equation}
 NewValue = (((OldVal - OldMin)*NewRange)/OldRange + NewMin)
 \end{equation}
+
+
+\begin{equation}
+E=m
+\end{equation}
